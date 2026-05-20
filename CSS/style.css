@@ -1,0 +1,828 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto; 
+    background-color: #FCFAF7;
+    max-width: 1600px;
+
+}
+   
+
+image{
+    max-width: 100%;
+    display: block;
+}
+.contenitore{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+.info{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.testo{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FCFAF7;
+    font-size: 48px;
+  
+}
+
+.info img{
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    background-size: cover;
+    max-height: 297px;
+    object-position: bottom 20%;
+}
+
+header{
+    background-color: #FCA311;
+    max-width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 16px;
+    position: sticky;
+    top: 0;           
+    z-index: 1000; 
+}
+header svg{
+    padding-left: 48px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    color: black;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 32px;
+padding-right: 48px;
+font-family:Helvetica, sans-serif;
+text-transform: uppercase;
+
+}
+
+nav ul :hover{
+    color: #FCFAF7;
+
+}
+main{
+    background-color: #FCFAF7;
+}
+
+.descrizione-piazze {
+    max-width: 600px;     
+    margin: 50px auto;     
+    padding-left: 20px;    
+    border-left: 4px solid #FCA311; /* La linea verticale colorata a sinistra */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;      
+    text-align: left; 
+     margin-top: 100px;
+}
+
+.content{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 96px 16px;
+    position: relative;
+    flex:1;
+    
+}
+
+.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 34px;
+    display: block;
+}
+
+.card p{
+    background-color: #FCFAF7;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+@media (max-width: 1200px) {
+    
+    
+    .card {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 20px;
+    }
+    .card2{
+        display: grid;
+         grid-template-columns: 1fr !important;
+         justify-items: center;
+    }
+
+    .colonna1, .colonna2, .colonna3{
+     display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    }
+
+     .testo2{
+        font-size: 32px !important;
+        border-right: 8px solid #FCA311 !important;
+    }
+
+    .testo{
+        font-size: 16px;
+    }
+    .header-info{
+    gap: 0px;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+    nav ul{
+    display: flex;
+    gap: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    }
+
+    header{
+        padding: 16px 4px;
+    }
+    header svg{
+    padding-left: 16px;
+    width: 30%;
+}
+.descrizione-piazze2 p {
+    font-size: 16px;
+}
+ footer {
+       flex-direction: column;
+       align-items: center; 
+        text-align: center;
+        gap: 15px;  
+    }
+    
+    .colonna-sinistra p, 
+    .colonna-sinistra a {
+        padding-left: 0 !important;
+        font-size: 13px !important;
+    }
+
+    .colonna-centrale h3 {
+        padding-right: 0 !important;
+        font-size: 15px;
+    }
+
+    .colonna-destra p {
+        font-size: 13px;
+        text-align: right;
+    }
+
+    .social-icons, .social-icons svg {
+        padding-right: 0 !important; 
+        gap: 10px !important;        
+        justify-content: flex-end;
+        width: 80%;
+        align-items: end;
+    }
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    
+  }
+
+    .box-descrizione{
+    flex-direction: column; 
+     align-items: center; 
+     font-size: 16px;   
+  }
+  .box-descrizione img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+
+    .box-descrizione2{
+    flex-direction: column; 
+     align-items: center;  
+      font-size: 16px;    
+  }
+  .box-descrizione2 img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+
+      .box-descrizione3{
+    flex-direction: column; 
+     align-items: center;   
+      font-size: 16px;   
+  }
+  .box-descrizione3 img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+
+      .box-descrizione4{
+    flex-direction: column; 
+     align-items: center;  
+      font-size: 16px;    
+  }
+  .box-descrizione4 img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+
+
+
+     .foto-palermo {
+        grid-template-columns: 1fr !important; 
+    }
+   .box-curiosità{
+    flex-direction: column !important; 
+     align-items: center;    
+  }
+    .box-curiosità img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+    .box-curiosità2{
+    flex-direction: column !important; 
+     align-items: center;    
+  }
+    .box-curiosità2 img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+    .box-curiosità3{
+    flex-direction: column !important; 
+     align-items: center;    
+  }
+    .box-curiosità3 img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+
+    .box-curiosità4{
+    flex-direction: column !important; 
+     align-items: center;    
+  }
+    .box-curiosità4 img {
+    max-width: 80%;         
+    margin-bottom: 20px;    
+    padding: 0;             
+  }
+}
+
+
+section.pulsante {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 50px 0;         
+    margin-bottom: 50PX;
+}
+
+/* Trasforma il link in un pulsante */
+.btn-piazze {
+     display: inline-block; 
+    background-color: #FCA311; 
+    color: #FCFAF7;            
+    padding: 15px 40px;       
+    border-radius: 50px;      
+    text-decoration: none;     
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-align: center; 
+}
+
+.btn-piazze:hover {
+    background-color: #FCA311;
+    transform: translateY(-3px); 
+}
+
+
+.info-griglia{
+    max-width: 900px;
+    margin: auto;
+}
+
+.card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+    padding: 40px 16px;
+    padding-left: 30px;
+    flex:1;
+    
+}
+
+
+.card2 svg{
+    height: 49px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+     order: -1;
+}
+
+.card2 p{
+    background-color: #FCFAF7;
+    font-size: 16px;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.bold1{
+    font-weight: bold;
+}
+
+.bold2{
+    font-weight: bold;
+}
+.bold3{
+    font-weight: bold;
+}
+
+.linea-sopra {
+    display: block;      
+    margin: 0 auto;      
+    padding: 48px;        
+    max-width: 100%;
+    width: 50%;        
+}
+
+
+.card3 {
+      width: 100%;     
+    max-width: 100%;  
+    margin: 0;      
+    padding: 0;
+     position: relative;
+}
+
+.card3 img {
+   display: block;    
+    width: 100%;      
+    height: auto; 
+}
+
+.testo2{
+  position: absolute;
+    top: 50%;          
+    right: 5%;        
+    transform: translateY(-50%); 
+    
+    color: #FCFAF7;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: right; 
+    line-height: 1.1;
+   padding-right: 32px;
+     border-right: 12px solid #FCA311;
+}
+
+.arancione1{
+    color: #FCA311;
+}
+
+.descrizione-piazze2 {
+    max-width: 600px;     
+    margin: 180px auto;     
+    padding-left: 20px;    
+    border-left: 10px solid #FCA311; 
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;       
+     margin-top: 100px;
+     font-size: 24px; 
+}
+
+footer{
+     background-color: #FCA311;
+    max-width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 16px;
+    margin-top: 170px;
+}
+
+.colonna-sinistra p{
+    font-size: 16px;
+  text-align: left;
+  padding-left: 32px;
+    font-weight: bold;
+     line-height: 1.1;
+}
+.colonna-sinistra a{
+    font-size: 16px;
+  text-align: left;
+  padding-left: 0px;
+    font-weight: bold;
+}
+
+.colonna-sinistra a:hover{
+    color: #FCFAF7;
+    text-decoration: underline;
+    transform: translateY(-3px); 
+}
+
+.colonna-centrale a:hover{
+    color: #FCFAF7;
+    text-decoration: underline;
+    transform: translateY(-3px); 
+
+}
+
+ 
+.colonna-centrale h3{
+   margin-bottom: 140px;
+    flex: 1;
+  text-align: center;
+  padding-right: 16px;
+}
+
+.social-icons{
+     display: flex;
+  justify-content: flex-end; 
+  gap: 32px;    
+  padding-right: 96px;
+}
+.colonna-destra p{
+    padding-left: 36px;
+    font-weight: bold;
+
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 30px; 
+  padding: 40px;
+  max-width: 100%px;
+  margin: 0 auto;
+}
+
+.card-colonna0, 
+.card-colonna1, 
+.card-colonna2 {
+  display: contents;
+}
+
+/* Stile dei contenitori delle singole città */
+.card-colonna2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+[class^="contenitore-"] img {
+  width: 100%;
+  aspect-ratio: 1.5 / 1; 
+  object-fit: cover;
+  border-radius: 35px; 
+  display: block;
+}
+
+[class^="contenitore-"] p {
+  margin-top: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.contenitore-palermo a :hover, .contenitore-messina a :hover, .contenitore-catania a :hover, .contenitore-ragusa a :hover{
+    background-color: #FCA311;
+    padding: 5px;
+    font-weight: bold;
+ 
+}
+
+[class^="contenitore-"]:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+   background-color: #FCA311;
+    padding: 5px;
+}
+
+
+
+
+
+
+/*PALERMO*/
+
+
+.box-descrizione{
+    display: flex;
+     padding:80px 64px ;
+}
+.box-descrizione img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+}
+
+.box-descrizione p{
+    padding-left: 48px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+.box-storia{
+    font-size: 24px;
+    padding:0px 64px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+.foto-palermo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;        
+    padding: 32px;
+    align-items: center; 
+    margin-top: 80px;
+}
+
+
+.foto-palermo img {
+    width: 100%;       
+    height: 250px;       
+    object-fit: cover;  
+    border-radius: 34px;
+}
+
+.box-attività{
+     padding-left: 64px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+.box-curiosità{
+    display: flex;
+    flex-direction: row-reverse; 
+     padding:80px 32px ;
+        gap: 48px;   
+}
+.box-curiosità img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+}
+
+.box-curiosità p{
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0;
+     flex: 1;   
+    border-left: 8px solid #FCA311;
+  padding-left: 8px;
+
+}
+.bold-curiosità{
+    font-weight: bold;
+}
+
+
+/*CATANIa*/
+
+.box-descrizione2{
+    display: flex;
+     padding:80px 64px ;
+}
+.box-descrizione2 img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+    margin-top: 64px;
+}
+
+
+.box-descrizione2 p{
+    padding-left: 48px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+.box-storia2{
+    font-size: 24px;
+    padding:0px 64px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0 auto;
+    max-width: 100%;
+}
+.box-curiosità2{
+    display: flex;
+    flex-direction: row-reverse; 
+     padding:80px 32px ;
+        gap: 48px;   
+}
+.box-curiosità2 img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+}
+
+.box-curiosità2 p{
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0;
+     flex: 1;   
+    border-left: 8px solid #FCA311;
+  padding-left: 8px;
+
+}
+
+.box-attività2{
+     padding-left: 64px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+/*MESSINA*/
+
+.box-descrizione3{
+    display: flex;
+     padding:80px 64px ;
+}
+.box-descrizione3 img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+    margin-top: 64px;
+}
+
+
+.box-descrizione3 p{
+    padding-left: 48px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+.box-storia3{
+    font-size: 24px;
+    padding:0px 64px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0 auto;
+    max-width: 100%;
+}
+.box-curiosità3{
+    display: flex;
+    flex-direction: row-reverse; 
+     padding:80px 32px ;
+        gap: 48px;   
+}
+.box-curiosità3 img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+}
+
+.box-curiosità3 p{
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0;
+     flex: 1;   
+    border-left: 8px solid #FCA311;
+  padding-left: 8px;
+
+}
+
+.box-attività3{
+     padding-left: 64px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+/*RAGUSA*/
+
+.box-descrizione4{
+    display: flex;
+     padding:80px 64px ;
+}
+.box-descrizione4 img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+    margin-top: 64px;
+}
+
+
+.box-descrizione4 p{
+    padding-left: 48px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
+
+.box-storia4{
+    font-size: 24px;
+    padding:0px 64px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0 auto;
+    max-width: 100%;
+}
+.box-curiosità4{
+    display: flex;
+    flex-direction: row-reverse; 
+     padding:80px 32px ;
+        gap: 48px;   
+}
+.box-curiosità4 img{
+   width: 583px;
+   margin: 0 auto;
+   border-radius: 34px;
+    align-self: flex-start;
+}
+
+.box-curiosità4 p{
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+    margin: 0;
+     flex: 1;   
+    border-left: 8px solid #FCA311;
+  padding-left: 8px;
+
+}
+
+.box-attività4{
+     padding-left: 64px;
+    margin-top: 64px;
+    font-size: 24px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;     
+}
